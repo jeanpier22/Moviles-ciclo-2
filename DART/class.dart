@@ -81,3 +81,10 @@ class Alumno_Private_Class{
 
   set set_age(int age1) => _age = age1;
 }
+
+
+// Crear la clase alumno con su contructor getter y su setter 
+// nombre, edad, ciclo
+
+// Crear la clase alumno-ti
+// Curso: Moviles
