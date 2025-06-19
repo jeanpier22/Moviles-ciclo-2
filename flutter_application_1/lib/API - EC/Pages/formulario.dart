@@ -3,20 +3,20 @@ import 'package:flutter/material.dart';
 
 void main(){
   runApp(MaterialApp(
-    home: Pantalla2(),
+    home: Formulario(),
   ));
 }
 
-class Pantalla2 extends StatefulWidget{
-  const Pantalla2({super.key});
+class Formulario extends StatefulWidget{
+  const Formulario({super.key});
 
   @override
-  State<Pantalla2> createState() => _Pantalla2State();
+  State<Formulario> createState() => _Pantalla2State();
 }
 
 
 
-class _Pantalla2State extends State<Pantalla2>{
+class _Pantalla2State extends State<Formulario>{
   final TextEditingController nombreController = TextEditingController();
   final TextEditingController edadController = TextEditingController();
 
@@ -39,7 +39,7 @@ class _Pantalla2State extends State<Pantalla2>{
             SizedBox(height: 20,),
             ElevatedButton(
               onPressed: (){
-                Navigator.pushNamed(context, '/resultado',arguments: [nombreController.text, edadController.text]);
+                Navigator.pushNamed(context, '/',arguments: [nombreController.text, edadController.text]);
               }, 
               child: Text('Enviar'))
           ],),),
